@@ -1,6 +1,3 @@
-" EGPWF/MKV-A vimrc file
-"
-" Adds highlighting and other features specific to the EGPWF/MKV-A project
 set nocompatible  " don't need vi compatibility
 set number        " enable line numbering
 source $VIMRUNTIME/vimrc_example.vim
@@ -55,8 +52,6 @@ set mouse=a
 :autocmd FileType python :iabbrev <buffer> lll if:<left>
 
 set hidden " no hidden buffers
-
-" EGPWF code standard entries
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -200,9 +195,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ag
 
 "Snippets
-"EGWPF Test Analysis
+"Test Analysis
 function! TestAnalysis()
-   r C:/Cygwin64/home/E837673/.vim/snippets/TestAnalysis.txt
+   r C:/Cygwin64/home/.vim/snippets/TestAnalysis.txt
 endfunction
 
 nmap <leader>ta :call TestAnalysis()<CR>
